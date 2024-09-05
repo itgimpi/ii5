@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 // faktorijel od n
-
+// ponavljanje poziva !!!
 int fkt( int n) {
     if ( n==0 ) return 1;
     //if ( n==1 ) return 1;
