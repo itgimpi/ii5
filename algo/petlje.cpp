@@ -57,14 +57,32 @@ int main() {
             cout << i << ' ' << j << ' '; // tacno n(n-1)/2 puta 
     cout << '\n';
 
-    for ( int i = 1; i * i < n; i++ ) // sqrt n
+    for ( int i = 1; i * i < n; i++ ) // О(sqrt n)
         cout << i << ' ';
     cout << '\n';   
 
     int p = 0;
-    for ( int i = 1; p < n; i++ ) // O
+    for ( int i = 1; p < n; i++ ) // О(sqrt n)
         p += i;
     cout << '\n'; 
 
+    for (int i = 1; i < n; i *= 2) // O(log n)
+        cout << i << ' '; // T = log (2) n
 
+    for (int i = 1; i < n; i *= 3) // O(log n)
+        cout << i << ' '; // T = log (3) n, brze od preth.
+
+    for (int i = 1; i < n; i *= 10) // O(log n)
+        cout << i << ' '; // T = log (10) n, brze od preth.
+
+    // O( log n )
+    p = 0; // O(1)
+    for (int i = 1; i < n; i *= 2) // O(log n)
+        p++;
+    for (int j = 1; j < p; j *= 2) // O(log log n)
+        cout << j;
+
+    for ( int i = 0; i < n; i++ ) // O(n log n)
+        for (int j = 1; j < n; j*=2)
+            cout << i << j;
 }
