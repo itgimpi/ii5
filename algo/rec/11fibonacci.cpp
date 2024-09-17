@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 // n-ti fibonaci
-
+// ponavljanje poziva !!!
 int fib( int n) {
     if ( n==0 || n==1 ) return 1; // BC
     //if ( n < 2 ) // BC

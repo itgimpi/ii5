@@ -7,7 +7,7 @@ int brcif ( int n ) {
     return brcif( n / 10 ) + 1;
 }   
 
-int brcif2 ( int n ) {
+int brcif2 ( int n ) { // ne radi za n = 0
     if ( n == 0 ) return 0; // samo jedna cifra
     return brcif2( n / 10 ) + 1;
 } 

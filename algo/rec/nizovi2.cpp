@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void ispis1(vector<int>&a, int n) { // ispis elemenata niza naopako
+    if (n == 0) return;
+    cout << a[n-1] << ' '; // zadnji el.
+    ispis1(a, n-1); // smanjen problem za 1
+}
+
+void ispis2(vector<int>&a, int n) { // ispis elemenata niza redom
+    if (n == 0) return;
+    ispis2(a, n-1); // smanjen problem za 1
+    cout << a[n-1] << ' '; // zadnji el. 
+    }
+
+int sn(vector<int>&a, int n) {
+    if ( n == 0 ) return 0; // nema vise elemenata...
+    return sn(a, n-1) + a[n-1]; } // najbitnije
+    // zbir svih el. je zbir prvih n-1 + n-1-i.
+
+int main() {
+    vector<int>v {1, 23, 34, 456, 1000};
+    int n = 5;
+
+    ispis1(v, n); cout << endl; // niz i njegova dimenzija
+    ispis2(v, n); cout << endl; // niz i njegova dimenzija
+
+    cout << sn(v, n) << '\n';
+    
+
+
+    return 0;
+}
