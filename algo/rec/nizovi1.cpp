@@ -2,7 +2,7 @@
 using namespace std;
 
 void ispis1(int a[], int n) { // ispis elemenata niza naopako
-    if (n == 0) return;
+    if (n == 0) return; // nema vise elemenata
     cout << a[n-1] << ' '; // zadnji el.
     ispis1(a, n-1); // smanjen problem za 1
 }
@@ -15,7 +15,8 @@ void ispis2(int a[], int n) { // ispis elemenata niza redom
 
 int sn(int a[], int n) {
     if ( n == 0 ) return 0; // nema vise elemenata...
-    return sn(a, n-1) + a[n-1]; }
+    return sn(a, n-1) + a[n-1]; } // najbitnije
+    // zbir svih el. je zbir prvih n-1 + n-1-i.
 
 int main() {
     int a[] = {1, 23, 34, 456, 1000};
@@ -24,7 +25,8 @@ int main() {
     ispis1(a, n); cout << endl; // niz i njegova dimenzija
     ispis2(a, n); cout << endl; // niz i njegova dimenzija
 
-    cout << sn(a, n);
+    cout << sn(a, n) << '\n';
+    
 
 
     return 0;
