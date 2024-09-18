@@ -3,15 +3,15 @@ using namespace std;
 // Бројеви од a до b
 
 void adobe(int a, int b) {
-    if ( a > b) return;
-    cout << a << '\n';
-    adobe(a+1, b); }
+    if ( a > b) return; // BC, ako je prvi veci od drugog, kraj
+    cout << a << '\n'; // ispis
+    adobe(a+1, b); }  // rekurzija
 
 void adobe2(int a, int b) {
-    if ( a <= b) {
+    if ( a <= b) { // rek,
         cout << a << '\n';
         adobe(a+1, b); } 
-    return;     }
+    return;     } // BC, a > b
 
 
 int main() {
