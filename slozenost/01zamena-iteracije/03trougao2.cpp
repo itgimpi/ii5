@@ -16,7 +16,7 @@ int main() {
 
     while ( q-- ) { // for int i 0...
         cin >> k;
-        cout << gaus( k * k ) - gaus( ( k - 1 ) * ( k - 1 ) ) << '\n';
+        cout << ( 2 * k - 1 ) * ( ( k - 1 ) * ( k - 1 ) + 1 + k * k ) / 2 << '\n';
         
     }
 
