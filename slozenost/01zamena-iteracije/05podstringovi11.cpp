@@ -2,7 +2,8 @@
 using namespace std;
 // Број подстрингова који почињу и завршавају са 1
 // https://petlja.org/sr-Latn-RS/biblioteka/r/Zbirka2/br_1xxxx1_podstringova
-// O(nn)
+// O(n) + O(nn)
+//unos  + prog.
 
 // int broj(string s) {
 int broj(const string &s) {
