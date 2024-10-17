@@ -5,7 +5,7 @@ using namespace std;
 
 int stepen(int x, int n) { // non-tail recursion
     if (n==0) return 1; // BC
-    if ( n % 2 == 1 )return stepen(x, n-1) * x; // non tail
+    if ( n % 2 == 1 ) return stepen(x, n-1) * x; // non tail
     return stepen ( x * x, n/2); }
 
 int stepen2(int x, int n, int res) { // tail recursion
