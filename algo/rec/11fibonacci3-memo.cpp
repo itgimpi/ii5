@@ -1,6 +1,5 @@
 using namespace std;
 #include <iostream>
-#include <vector>
 
 int memo[1002]; // stat. niz, sve na 0
 
