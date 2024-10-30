@@ -7,8 +7,6 @@ struct el { // element steka
     int start, tmp, finish;
     int n; };
 
-tuple<int, int, int, int, int>rek;
-
 el call(int start, int tmp, int finish, int n) {
     el rez;
     rez.type = 0; // poziv
