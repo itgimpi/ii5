@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+// O(n)
 /* Низ се може попунити и помоћу само једне петље у којој се врши преписивање елемената док се не упише њих n
  тако што се на место i преписује елемент са позиције i−k, увећавајући степен двојке k када се цео претходни подсегмент препише.*/
 
 bool Morze(int n) {
     vector<bool> a(n+1);
     a[1] = true;
-    // rastojanje elemenata koji se negiraju
+    // segment elemenata koji se negiraju
     int k = 1;
     
     for (int i = 2; i <= n; i++) { // popunjava niz zakljucno sa pozicijom n

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 typedef unsigned long long ull;
-
+// O(log n)
 ull f(ull  n) { 
     ull a = 1, b = 0; // a je koef. uz prvi, na pocetku 1
     while ( n > 1 ) {
@@ -10,7 +10,7 @@ ull f(ull  n) {
             a += b; // azuriraj koef. prvog
         else // nepar
             b += a;
-        n = n2; }
+        n = n2; } // log n
     return a + b;
     }
 

@@ -13,18 +13,21 @@ using namespace std;
 bool Morze(int n) {
     vector<bool> a(n+1);
     a[1] = true; // prvi je 1
-    int brojac = 1; // broj upisanih elemenata
-    int segment = 1; // duzina segmenta koji se trenutno negira
+
+    int brojac = 1; // broj upisanih elemenata (do n)
+    int segment = 1; // duzina segmenta koji se trenutno negira (1, 2, 4, ...)
+
     while (brojac < n) {
         // negira segment trenutne duzine
         for (int i = 1; i <= segment && brojac < n; i++) { // samo do n-tog elementa
-            a[segment + i] = !a[i];
+            a[segment + i] = !a[i]; // negacija
             brojac++; }
         segment *= 2; } // naredni segment koji treba negirati je duplo duzi
     return a[n]; }
 
 int main() {
     int n; cin >> n;
+    // if .... else ...
     cout << (Morze(n) ? "1" : "0") << endl; // if...
     return 0;
 }
