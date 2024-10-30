@@ -4,6 +4,7 @@ typedef unsigned long long ull;
 // Функција пар-непар
 // https://petlja.org/sr-Latn-RS/biblioteka/r/Zbirka2/funkcija_par_nepar
 // 2 deljenja
+
 ull f( ull n ) {
     if (n == 1) return 1;
     if ( n % 2 == 0 ) // par?
