@@ -13,10 +13,10 @@ using namespace std;
 bool Morze(int n) {
     vector<bool> a(n+1);
     a[1] = true; // prvi je 1
-    int brojac = 1; // broj upisanih elemenata
-    int segment = 1; // duzina segmenta koji se trenutno negira
+    int brojac = 1; // broj do sada upisanih elemenata
+    int segment = 1; // duzina segmenta koji se trenutno obradjuje
     while (brojac < n) {
-        // negira segment trenutne duzine
+        // negira segment trenutne duzine (1, 2, 4, 8, ...)
         for (int i = 1; i <= segment && brojac < n; i++) { // samo do n-tog elementa
             a[segment + i] = !a[i];
             brojac++; }

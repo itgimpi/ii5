@@ -8,16 +8,16 @@ using namespace std;
 bool Morze(int n) {
     vector<bool> a(n+1);
     a[1] = true;
-    // rastojanje elemenata koji se negiraju
+    // rastojanje elemenata koji se obradjuju
     int k = 1;
     
     for (int i = 2; i <= n; i++) { // popunjava niz zakljucno sa pozicijom n
-        a[i] = !a[i - k]; // negiramo odgovarajuci element
+        a[i] = !a[i - k]; // negira se odgovarajuci element
         
-        if (i == 2 * k) // negirali smo ceo segment, pa prelazimo na sledeci
+        if (i == 2 * k) // obradjen je ceo segment, predji na sledeci
             k *= 2;    }
     
-    return a[n]; // upisano je n elemenata niza, pa ocitavamo rezultat
+    return a[n]; // upisano je n elemenata niza
 }
 
 int main() {
