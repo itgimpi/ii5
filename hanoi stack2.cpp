@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// torke na stek
 struct el { // element steka
     int type; // tip rekurzije, 0 je poziv, 1 je ispis
     int start, tmp, finish;
