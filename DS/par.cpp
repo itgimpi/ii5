@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <tuple>
+
 using namespace std;
 // Par
 
@@ -21,6 +23,6 @@ int main() {
 
     int p1, p2;
     tie(p1, p2) = b;
-    
+
     cout << p1 << " " << p2 << endl; 
     return 0; }
