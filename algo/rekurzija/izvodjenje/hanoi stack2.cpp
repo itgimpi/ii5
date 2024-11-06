@@ -1,33 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
-//get<0>(student0)
+// torke na stek
 struct el { // element steka
     int type; // tip rekurzije, 0 je poziv, 1 je ispis
     int start, tmp, finish;
     int n; };
 
-//tuple<int, int, int, int, int>rek;
-
 tuple<int, int, int, int, int> poziv(int start, int tmp, int finish, int n) {
     tuple<int, int, int, int, int> res = {0, start, tmp, finish, n};
     //tuple<int, int, int, int, int> res = make_tuple (0, start, tmp, finish, n);
     return res;  }
-
-el call(int start, int tmp, int finish, int n) {
-    el rez;
-    rez.type = 0; // poziv
-    rez.start = start; 
-    rez.tmp = tmp; 
-    rez.finish = finish; 
-    rez.n = n;
-    return rez;  }
-
-el print(int start, int finish) {
-    el rez;
-    rez.type = 1; // ispis
-    rez.start = start; 
-    rez.finish = finish;
-    return rez;     }
 
 tuple<int, int, int, int, int> ispis(int start, int tmp, int finish, int n) {
     tuple<int, int, int, int, int> res = {1, start, tmp, finish, n};

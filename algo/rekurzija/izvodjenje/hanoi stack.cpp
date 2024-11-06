@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stack>
 using namespace std;
-typedef int tower;
+typedef int tower; // tip tower umesto int
 
 struct el { // element steka
     int type; // tip rekurzije, 0 je poziv, 1 je ispis

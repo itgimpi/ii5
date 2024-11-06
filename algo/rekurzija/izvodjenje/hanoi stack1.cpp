@@ -1,13 +1,11 @@
 #include <iostream>
 #include <stack>
 using namespace std;
-
+// bez tipa tower
 struct el { // element steka
     int type; // tip rekurzije, 0 je poziv, 1 je ispis
     int start, tmp, finish;
     int n; };
-
-tuple<int, int, int, int, int>rek;
 
 el call(int start, int tmp, int finish, int n) {
     el rez;
