@@ -5,6 +5,7 @@
 
 int main() {
     int x = 2, y = 5;
+    
     printf("%d %d\n", x, y); // 2 5 ( x is true, y is true )
     printf("%d %d\n", !x, !y); // 0 0 ( !x is false, !y is false )
     printf("%d\n", x && y); // 1 ( T i T = T )
