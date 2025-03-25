@@ -6,8 +6,11 @@ using namespace std;
 int main() {                //76543210
     bitset<8>bajt;          //00000000
     cout << bajt << endl;
+    
     bajt[0] = 1;              //00000001
     cout << bajt << endl;
+
+
     
     bajt[1] = 1;              //00000011
     cout << bajt << endl;

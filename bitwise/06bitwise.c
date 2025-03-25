@@ -9,6 +9,7 @@ void ispis(unsigned broj) {
     putchar('\n'); }
 
 void ispis2(unsigned x) { // naopaki bitski ispis
+    // maska je 000000000000000001, sledeca je 0000000000000010, 0000000000100, 
     for ( unsigned maska = 1; maska; maska <<= 1 )
         putchar( maska & x ? '1': '0');
     putchar('\n'); }
