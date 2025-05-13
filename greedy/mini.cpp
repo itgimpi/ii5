@@ -2,6 +2,7 @@
 typedef long long ll;
 using namespace std;
 // Минимална сума два броја формирана од датих цифара
+// radi do 30ak cifara (15 + 15)
 
 int main() {
     int n; cin >> n; // iznos

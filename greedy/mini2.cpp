@@ -2,16 +2,14 @@
 typedef long long ll;
 using namespace std;
 // Минимална сума два броја формирана од датих цифара
+// za mnogocifrene brojeve
 
 int main() {
     int n; cin >> n; // iznos
-    //vector<int>a(n);
-    string s = ""; 
+    string s = ""; // empty
     for (int i = 0; i < n; i++) {
-        int cif;
-        cin >> cif;
-        s += (cif + '0');
-        }
+        int cif; cin >> cif;
+        s += (cif + '0'); } // 5 + '0' -> '5'
     //cout << s;
 
     if (n % 2 == 1)
