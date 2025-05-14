@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-// svi podskupovi - leksikografski
+// svi podskupovi - leksikografski - rec - 1, 2, 3, 4, ..., n
 
 void ispis(const vector<int>&p, int j) {
      for (int i = 0; i < j; i++)

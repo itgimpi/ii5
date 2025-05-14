@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-// svi podskupovi - rec
+// svi podskupovi - rec, 1, 2, 3...
 
 void ispis(const vector<int>&p,int j) {
      for (int i = 0; i < j; i++)
@@ -30,7 +30,7 @@ int main() {
      int n; cin >> n;
      vector<int>s(n);
      for (int i = 0; i < n; i++)
-          s[i] = i; // s[i] = i+1, cin >> x
+          s[i] = i + 1; // 
      vector<int>p(n);
      podskupovi(s, 0, p, 0);
 
