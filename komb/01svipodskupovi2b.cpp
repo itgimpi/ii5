@@ -28,7 +28,6 @@ void podskupovi(vector<int>&s, int n, int k) {
 int main() {
      int n; cin >> n;
      vector<int>s(n);
-     vector<int>p(n);
      podskupovi(s, n, 0);
 
      }

@@ -30,7 +30,7 @@ int main() {
      int n; cin >> n;
      vector<int>s(n);
      for (int i = 0; i < n; i++)
-          s[i] = i + 1; // 
+          s[i] = i + 1; // 1, 2, ..., n 
      vector<int>p(n);
      podskupovi(s, 0, p, 0);
 

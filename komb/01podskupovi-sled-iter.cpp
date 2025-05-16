@@ -25,9 +25,11 @@ int main() {
      vector<int>podskup(n);
      int el;
      int k = 0;
+     // unos proizvoljnog broja elemenata
      while ( cin >> el ) {
           podskup[k] = el; // k++
           k++; }
+
      if (slpod(podskup, n, k)) // da li sl. podskup postoji?
           for ( int i = 0; i < k; i++ )
                cout << podskup[i] << ' ';
