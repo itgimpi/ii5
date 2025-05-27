@@ -6,7 +6,8 @@ using namespace std;
 bool slpod(vector<int>&psk, int n, int &k) { // f-ja vrati T ili F
      if ( k == 0 ) { // empty set?
           psk[k++] = 1;
-          return true; }
+          return true; } // gl. programu se kaze da sl. podskup postoji
+
      if ( psk[k-1] < n ) { // prosirenje, zadnji nije n?
           psk[k] = psk[k-1] + 1;
           k++;
@@ -15,7 +16,7 @@ bool slpod(vector<int>&psk, int n, int &k) { // f-ja vrati T ili F
      k--; // skrati psk, br. el. --
      // {n} nema sledbenika?
      if ( k == 0 ) 
-          return false;
+          return false; // nema sl. podskupa
      // skracivanje
      psk[k-1]++; // bivsi predzadnji, sada zadnji
      return true; }
@@ -25,7 +26,7 @@ int main() {
      vector<int>podskup(n);
      int el;
      int k = 0;
-     // unos proizvoljnog broja elemenata
+     // unos proizvoljnog broja elemenata (k)
      while ( cin >> el ) {
           podskup[k] = el; // k++
           k++; }

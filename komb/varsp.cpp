@@ -14,11 +14,7 @@ void vsp(vector<int>&v, int n, int k){
      else
           for ( int nn = 1; nn <= n; nn++ ) { // prosirenje nekog stanja
                v[v.size()-k] = nn;
-               vsp(v, n, k-1);       }
-
-
-
-}
+               vsp(v, n, k-1);       } }
 
 int main() {
      int n, k; cin >> n >> k;

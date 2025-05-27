@@ -11,7 +11,8 @@ void ispis(const vector<int>&v) {
 void varsp(vector<int>&v, int n, int kk) { // prvi poziv k = 4
      //BC, ispis...
      if ( kk == 0 ) ispis(v);
-     else
+     else // dodaj nove elemente...
+          // dodaju se svi elementi 1, 2, ..., n
           for ( int nn = 1; nn <= n; nn++ ) { // nn = 1, 2, .., n
                v[v.size() - kk] = nn;
                varsp(v, n, kk-1);
@@ -22,8 +23,8 @@ void varsp(vector<int>&v, int n, int kk) { // prvi poziv k = 4
 
 int main() {
      int n, k; cin >> n >> k;
-
-     vector<int>var(k);
+     // skup sa elementima 1, 2, ..., n
+     vector<int>var(k); // svaka varijacija ima k elemenata
      varsp(var, n, k);
      
      }
