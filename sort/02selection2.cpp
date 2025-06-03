@@ -6,11 +6,11 @@ void ssort(vector<int>&a) {
      int n = a.size();
      
      for ( int i = 0; i < n - 1; i++ ) {
-          int inaj = i; // indeks najmanjeg
+          int inaj = i; // indeks najmanjeg je na pocetku i
           for ( int j = i + 1; j < n; j++ )
-               if ( a[inaj] > a[j] ) // ako el. nije na mestu...
-                    inaj = j;
-          swap(a[i], a[inaj]);
+               if ( a[inaj] > a[j] ) // ako je j-ti manji od do sada najmanjeg...
+                    inaj = j; // zapamti mu indeks
+          swap(a[i], a[inaj]); // na i-to mesto dolazi najmanji el.
 
 } }
 
